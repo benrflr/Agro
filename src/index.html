@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Агро</title>
+    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__row">
+                <div class="header__logo">
+                    <a href="/" class="header__logo__link"> <img src="icons/logo.png" alt="logo"></a>
+                </div>
+                <div class="header__price">
+                    <img src="icons/cube.svg" alt="cube">
+                    <p>Качество и приемлемая цена</p>
+                </div>
+                <div class="header__social">
+                    <div class="header__contacs">
+                        <a href="#" class="header__contacs__link header__contacs__link--wsp ">
+                            <p>WhatsApp</p>
+                        </a>
+                    </div>
+                    <div class="header__contacs">
+                        <a href="mailto:mail@agro-teh.su"
+                            class="header__contacs__link header__contacs__link--mail mailtrack">
+                            <p>mail@agro-teh.su</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="header__phones">
+                    <a href="tel:+89282122219" class="phonetrack">8-928-212-22-19</a>
+                    <a href="tel:+89287789280" class="phonetrack">8-928-778-92-80</a>
+                </div>
+                <button class="btn btn_header">
+                    Заказать звонок
+                </button>
+            </div>
+        </div>
+        <nav class="nav">
+            <div class="container">
+                <ul class="nav__menu">
+                    <li class="nav__menu__item"><a href="#" class="nav__menu__link">Ангары </a></li>
+                    <li class="nav__menu__item"><a href="#" class="nav__menu__link">Сельхозтехника</a></li>
+                    <li class="nav__menu__item"><a href="#" class="nav__menu__link">Запчасти </a></li>
+                    <li class="nav__menu__item"><a href="#" class="nav__menu__link">Услуги </a></li>
+                    <li class="nav__menu__item"><a href="#" class="nav__menu__link">О компании </a></li>
+                    <li class="nav__menu__item"><a href="#" class="nav__menu__link">Контакты </a></li>
+                    <li class="nav__menu__item">
+                        <a href="#" class="nav__menu__link nav__menu__link--triangle">Наши
+                            работы </a>
+                        <div class="nav__dropdown">
+                            <a href="#" class="nav__dropdown_item">Ангары бескаркасные</a>
+                            <a href="#" class="nav__dropdown_item">Тентовые ангары</a>
+                            <a href="#" class="nav__dropdown_item">Навесы и тока</a>
+                            <a href="#" class="nav__dropdown_item">Авиационные ангары</a>
+                            <a href="#" class="nav__dropdown_item">Каркасные ангары</a>
+                            <a href="#" class="nav__dropdown_item">Бороны</a>
+                            <a href="#" class="nav__dropdown_item">Разбрасыватели удобрений</a>
+                            <a href="#" class="nav__dropdown_item">Опрыскиватели</a>
+                            <a href="#" class="nav__dropdown_item">Прочая сельхозтехника</a>
+                            <a href="#" class="nav__dropdown_item">Запчасти и комплектующие</a>
+                            <a href="#" class="nav__dropdown_item">Услуги</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero__wrapper">
+                    <div class="row">
+                        <div class="col-7">
+                            <h1 class="hero__title">ИДЕАЛЬНЫЕ АНГАРЫ ЗАВОДСКОГО ИЗГОТОВЛЕНИЯ</h1>
+                            <p class="hero__subtitle">
+                                (Ангары, Бороны, Опрыскиватели, Сельхозтехника, Запчасти)
+                            </p>
+                            <ul class="hero__list">
+                                <li class="hero__item">напрямую от производителя</li>
+                                <li class="hero__item">абсолютно любых размеров</li>
+                            </ul>
+                            <form action="#" class="form">
+                                <h2 class="form__title">
+                                    получить консультацию:
+                                </h2>
+                                <p class="form__phone">Ваш телефон<span>*</span></p>
+                                <div class="form__wrap">
+                                    <input name="phone" required placeholder="+7 ( ___ ) ___ - __ - __" type="number"
+                                        class="teltrack">
+                                    <button class="btn btn_submit buttontrack">Отправить
+                                    </button>
+                                    <a href="tel:+89282122219" class="btn btn_phone">
+                                        8 928 212 22 19</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="build">
+            <div class="container">
+                <h2 class="build__title">
+                    Что строим
+                </h2>
+                <ul class="build__tabs">
+                    <li class="build__tab build__tab_active">Ангары бескаркасные</li>
+                    <li class="build__tab">Каркасные ангары</li>
+                    <li class="build__tab">Ангары тентовые</li>
+                    <li class="build__tab">Ремонт и реконструкция ангаров</li>
+                    <li class="build__tab">Изготовление металлоконструкций</li>
+                </ul>
+                <div class="row">
+                    <div class="build__item build__item_active">
+                        <div class="col-6">
+                            <img src="img/build_1.jpg" alt="build__img" class="build__img">
+                        </div>
+                        <div class="col-6 build__ml">
+                            <h2 class="build__text">Ангары бескаркасные</h2>
+                            <div class="build__wrapper">
+                                <div class="col-6">
+                                    <ul class="build__item-lists">
+                                        <li class="build__item-list"><a href="#">Бескаркасные ангары-свинарники</a></li>
+                                        <li class="build__item-list"><a href="#">Бескаркасные зернохранилища</a></li>
+                                        <li class="build__item-list"><a href="#">Бескаркасные склады, гаражи</a></li>
+                                        <li class="build__item-list"><a href="#">Производственные бескаркасные
+                                                сооружения</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-6">
+                                    <ul class="build__item-lists">
+                                        <li class="build__item-list"><a href="#">Бескаркасные навесы</a></li>
+                                        <li class="build__item-list"><a href="#">Бескаркасные овощехранилища</a></li>
+                                        <li class="build__item-list"><a href="#">Ангары для животноводства</a></li>
+                                        <li class="build__item-list"><a href="#">Авиационные ангары</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="build__item-specs">
+                                <div class="build__item-spec"><img src="icons/height.svg" alt="spec">
+                                    <p>От 12 до 28 метров</p>
+                                </div>
+                                <div class="build__item-spec"><img src="icons/thermometer.svg" alt="spec">
+                                    <p>Утепление пенополиуретаном</p>
+                                </div>
+                                <div class="build__item-spec"><img src="icons/fan.svg" alt="spec">
+                                    <p>Монтаж системы вентиляции</p>
+                                </div>
+                            </div>
+                            <p class="build__item-descr">
+                                Цена рассчитывается индивидуально по согласованному техническому заданию
+                            </p>
+                            <form action="#" class="form form_build">
+                                <h2 class="form__title form__title_build">
+                                    Получить расчет:
+                                </h2>
+                                <p class="form__phone form__phone_build">Ваш телефон<span>*</span></p>
+                                <input name="phone" required placeholder="+7 ( ___ ) ___ - __ - __" type="number"
+                                    class="phonetrack">
+                                <button class="btn btn_text buttontrack">
+                                    Отправить
+                                </button>
+                                <button class="btn btn_build btn_bg">8 928 212 22 19</button>
+                            </form>
+                            <div class="build__item-advs">
+                                Преимущества бескаркасных ангаров:
+                                <ul class="build__item-advs-list">
+                                    <li class="build__item-advs-adv">Быстрая окупаемость проекта</li>
+                                    <li class="build__item-advs-adv">Скорость строительства (20 дней)</li>
+                                    <li class="build__item-advs-adv">Герметичность и прочность конструкции</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="build__item">
+                        <div class="col-6">
+                            <img src="img/build_2.jpg" alt="build__img" class="build__img">
+                        </div>
+                        <div class="col-6 build__ml">
+                            <h2 class="build__text">Каркасные ангары</h2>
+                            <div class="build__wrapper">
+                                <div class="col-6">
+                                    <ul class="build__item-lists">
+                                        <li class="build__item-list"><a href="#">Каркасные ангары</a></li>
+                                        <li class="build__item-list"><a href="#">Тока, каркасные навесы</a></li>
+                                        <li class="build__item-list"><a href="#">Прямостенные ангары</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-6">
+                                    <ul class="build__item-lists">
+                                        <li class="build__item-list"><a href="#">Автомойки и автосервисы</a></li>
+                                        <li class="build__item-list"><a href="#">Магазины</a></li>
+                                        <li class="build__item-list"><a href="#">Навесы</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="build__item-specs">
+                                <div class="build__item-spec"><img src="icons/height.svg" alt="spec">
+                                    <p>От 10 до 48 метров</p>
+                                </div>
+                                <div class="build__item-spec"><img src="icons/sewage.svg" alt="spec">
+                                    <p>Монтаж системы водоотлива (опционально)</p>
+                                </div>
+                                <div class="build__item-spec"><img src="icons/drain.svg" alt="spec">
+                                    <p>Зашивка боковых стен (опционально)</p>
+                                </div>
+                            </div>
+                            <p class="build__item-descr">
+                                Цена рассчитывается индивидуально по согласованному техническому заданию
+                            </p>
+                            <form action="#" class="form form_build">
+                                <h2 class="form__title form__title_build">
+                                    Получить расчет:
+                                </h2>
+                                <p class="form__phone form__phone_build">Ваш телефон<span>*</span></p>
+                                <input name="phone" required placeholder="+7 ( ___ ) ___ - __ - __" type="number"
+                                    class="phonetrack">
+                                <button class="btn btn_text buttontrack">
+                                    Отправить
+                                </button>
+                                <button class="btn btn_build btn_bg">8 928 212 22 19</button>
+                            </form>
+                            <div class="build__item-advs">
+                                Каркасные навесы:
+                                <ul class="build__item-advs-list">
+                                    <li class="build__item-advs-adv">Скорость строительства (от 25 дней)</li>
+                                    <li class="build__item-advs-adv">Заказчик может выбрать цвет зашивки стен</li>
+                                    <li class="build__item-advs-adv">Возможность утепления закрытого сооружения</li>
+                                    <li class="build__item-advs-adv">Удобство загрузки и выгрузки продукции за счёт
+                                        широких проездов</li>
+                                    <li class="build__item-advs-adv">Возможность выбора профиля зашивки кровли и боковых
+                                        стен в зависимости от назначения</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="build__item">
+                        <div class="col-6">
+                            <img src="img/build_3.jpg" alt="build__img" class="build__img">
+                        </div>
+                        <div class="col-6 build__ml">
+                            <h2 class="build__text">Тентовые ангары</h2>
+                            <div class="build__item-specs">
+                                <div class="build__item-spec"><img src="icons/height.svg" alt="spec">
+                                    <p>От 12 до 14 метров</p>
+                                </div>
+                            </div>
+                            <p class="build__item-descr">
+                                Цена рассчитывается индивидуально по согласованному техническому заданию
+                            </p>
+                            <form action="#" class="form form_build">
+                                <h2 class="form__title form__title_build">
+                                    Получить расчет:
+                                </h2>
+                                <p class="form__phone form__phone_build">Ваш телефон<span>*</span></p>
+                                <input name="phone" required placeholder="+7 ( ___ ) ___ - __ - __" type="number"
+                                    class="phonetrack">
+                                <button class="btn btn_text buttontrack">
+                                    Отправить
+                                </button>
+                                <button class="btn btn_build btn_bg">8 928 212 22 19</button>
+                            </form>
+                            <div class="build__item-advs">
+                                Тентовые ангары – наиболее оптимальный вариант строительства, если:
+                                <ul class="build__item-advs-list">
+                                    <li class="build__item-advs-adv">Вам нужно выставочное помещение</li>
+                                    <li class="build__item-advs-adv">Вам нужна временная и мобильная постройка</li>
+                                    <li class="build__item-advs-adv">У Вас ограниченный бюджет и поджимают сроки</li>
+                                    <li class="build__item-advs-adv">Нужна постройка на охраняемой территории</li>
+                                    <li class="build__item-advs-adv">Материал тента максимально устойчив к воздействиям
+                                        окружающей среды, в т.ч., солнечного излучения, морозов, сильных ветров и
+                                        осадков</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="build__item">
+                        <div class="col-6">
+                            <img src="img/build_4.jpg" alt="build__img" class="build__img">
+                        </div>
+                        <div class="col-6 build__ml">
+                            <h2 class="build__text">Изготовление металлоконструкций</h2>
+                            <p class="build__item-descr">
+                                Цена рассчитывается индивидуально по согласованному техническому заданию
+                            </p>
+                            <form action="#" class="form form_build">
+                                <h2 class="form__title form__title_build">
+                                    Получить расчет:
+                                </h2>
+                                <p class="form__phone form__phone_build">Ваш телефон<span>*</span></p>
+                                <input name="phone" required placeholder="+7 ( ___ ) ___ - __ - __" type="number"
+                                    class="phonetrack">
+                                <button class="btn btn_text buttontrack">
+                                    Отправить
+                                </button>
+                                <button class="btn btn_build btn_bg">8 928 212 22 19</button>
+                            </form>
+                            <div class="build__item-advs build__item-advs-mt">
+                                Широкий спектр производственных услуг по изготовлению деталей:
+                                <ul class="build__item-advs-list">
+                                    <li class="build__item-advs-adv">гибка листового металла</li>
+                                    <li class="build__item-advs-adv">порошковая покраска в любой цвет</li>
+                                    <li class="build__item-advs-adv">раскрой листового металла</li>
+                                    <li class="build__item-advs-adv">слесарные, сборочные и сварочные работы</li>
+                                    <li class="build__item-advs-adv">токарные работы по чертежам</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="build__item">
+                        <div class="col-6">
+                            <img src="img/build_5.jpg" alt="build__img" class="build__img">
+                        </div>
+                        <div class="col-6 build__ml">
+                            <h2 class="build__text">Ремонт и реконструкция ангаров</h2>
+                            <div class="build__item-specs">
+                                <div class="build__item-spec"><img src="icons/height.svg" alt="spec">
+                                    <p>От 12 до 28 метров</p>
+                                </div>
+                                <div class="build__item-spec"><img src="icons/sewage.svg" alt="spec">
+                                    <p>Утепление пенополиуретаном</p>
+                                </div>
+                                <div class="build__item-spec"><img src="icons/drain.svg" alt="spec">
+                                    <p>Монтаж системы вентиляции</p>
+                                </div>
+                            </div>
+                            <p class="build__item-descr">
+                                Цена рассчитывается индивидуально по согласованному техническому заданию
+                            </p>
+                            <form action="#" class="form form_build">
+                                <h2 class="form__title form__title_build">
+                                    Получить расчет:
+                                </h2>
+                                <p class="form__phone form__phone_build">Ваш телефон<span>*</span></p>
+                                <input name="phone" required placeholder="+7 ( ___ ) ___ - __ - __" type="number"
+                                    class="phonetrack">
+                                <button class="btn btn_text buttontrack">
+                                    Отправить
+                                </button>
+                                <button class="btn btn_build btn_bg">8 928 212 22 19</button>
+                            </form>
+                            <div class="build__item-advs">
+                                В зависимости от назначения сооружения, могут быть выполнены следующие виды работ:
+                                <ul class="build__item-advs-list">
+                                    <li class="build__item-advs-adv">Установка естественного освещения</li>
+                                    <li class="build__item-advs-adv">Монтаж естественной системы вентиляции</li>
+                                    <li class="build__item-advs-adv">Монтаж приточной и принудительной систем вентиляции
+                                    </li>
+                                    <li class="build__item-advs-adv">Утепление сооружения</li>
+                                    <li class="build__item-advs-adv">Какие-либо другие виды работ, требуемые Заказчиком
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="prod">
+            <div class="container">
+                <h2 class="prod__title">
+                    Что производим
+                </h2>
+                <ul class="prod__tabs">
+                    <li class="prod__tab prod__tab_active">Бороны</li>
+                    <li class="prod__tab">Опрыскиватели</li>
+                    <li class="prod__tab">Разбрасыватели удобрений</li>
+                    <li class="prod__tab">Прочая сельхозтехника</li>
+                    <li class="prod__tab">Запчасти и комплектующие</li>
+                </ul>
+                <div class="row">
+                    <div class="prod__item prod__item_active">
+                        <div class="col-6">
+                            <img src="img/prod_1.jpg" alt="build__img" class="prod__img">
+                        </div>
+                        <div class="col-6 prod__ml">
+                            <h2 class="prod__text">Бороны</h2>
+                            <p class="prod__item-descr">
+                                Цена рассчитывается индивидуально по согласованному техническому заданию
+                            </p>
+                            <form action="#" class="form form_build">
+                                <h2 class="form__title form__title_build">
+                                    Получить расчет:
+                                </h2>
+                                <p class="form__phone form__phone_build">Ваш телефон<span>*</span></p>
+                                <input name="phone" required placeholder="+7 ( ___ ) ___ - __ - __" type="number"
+                                    class="phonetrack">
+                                <button class="btn btn_text buttontrack">
+                                    Отправить
+                                </button>
+                                <button class="btn btn_build btn_bg">8 928 212 22 19</button>
+                            </form>
+                            <div class="prod__item-advs">
+                                Применение:
+                                <ul class="prod__item-advs-list">
+                                    <li class="prod__item-advs-adv">обработки почвы до стадии появления всходов и
+                                        после;</li>
+                                    <li class="prod__item-advs-adv">работ по сохранению нормальной влажности почвы;
+                                    </li>
+                                    <li class="prod__item-advs-adv">для выравнивания верхнего почвенного слоя;</li>
+                                    <li class="prod__item-advs-adv">для борьбы с сорняками на их ранней (ниточковой)
+                                        фазе.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="prod__item">
+                        <div class="col-6">
+                            <img src="img/prod_2.jpg" alt="build__img" class="prod__img">
+                        </div>
+                        <div class="col-6 prod__ml">
+                            <h2 class="prod__text">Опрыскиватели</h2>
+                            <p class="prod__item-descr">
+                                Цена рассчитывается индивидуально по согласованному техническому заданию
+                            </p>
+                            <form action="#" class="form form_build">
+                                <h2 class="form__title form__title_build">
+                                    Получить расчет:
+                                </h2>
+                                <p class="form__phone form__phone_build">Ваш телефон<span>*</span></p>
+                                <input name="phone" required placeholder="+7 ( ___ ) ___ - __ - __" type="number"
+                                    class="phonetrack">
+                                <button class="btn btn_text buttontrack">
+                                    Отправить
+                                </button>
+                                <button class="btn btn_build btn_bg">8 928 212 22 19</button>
+                            </form>
+                            <div class="prod__item-advs">
+                                Надежность и долговечность:
+                                <ul class="prod__item-advs-list">
+                                    <li class="prod__item-advs-adv">в основе машины – прочная и надежная сварная рамная
+                                        конструкция</li>
+                                    <li class="prod__item-advs-adv">на бункер и раму нанесено химически стойкое
+                                        полимерное покрытие</li>
+                                    <li class="prod__item-advs-adv">все крепежные элементы, отбойный короб, рабочие
+                                        тарелки и лопатки сделаны из нержавеющей стали</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="prod__item">
+                        <div class="col-6">
+                            <img src="img/prod_3.jpg" alt="build__img" class="prod__img">
+                        </div>
+                        <div class="col-6 prod__ml">
+                            <h2 class="prod__text">Разбрасыватели удобрений</h2>
+                            <p class="prod__item-descr">
+                                Цена рассчитывается индивидуально по согласованному техническому заданию
+                            </p>
+                            <form action="#" class="form form_build">
+                                <h2 class="form__title form__title_build">
+                                    Получить расчет:
+                                </h2>
+                                <p class="form__phone form__phone_build">Ваш телефон<span>*</span></p>
+                                <input name="phone" required placeholder="+7 ( ___ ) ___ - __ - __" type="number"
+                                    class="phonetrack">
+                                <button class="btn btn_text buttontrack">
+                                    Отправить
+                                </button>
+                                <button class="btn btn_build btn_bg">8 928 212 22 19</button>
+                            </form>
+                            <div class="prod__item-advs">
+                                Функциональность и удобство эксплуатации:
+                                <ul class="prod__item-advs-list">
+                                    <li class="prod__item-advs-adv">удобная подача разбрасываемого материала и низкая
+                                        высота загрузки</li>
+                                    <li class="prod__item-advs-adv">доступная и простая система для регулирования
+                                        расхода гранул</li>
+                                    <li class="prod__item-advs-adv">Ещё одной важной функцией МВУ является посев семян
+                                        трав и зерновых. Для этого такое оборудование и используется на мелкоконтурных
+                                        полях</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="prod__item">
+                        <div class="col-6">
+                            <img src="img/prod_4.jpg" alt="build__img" class="prod__img">
+                        </div>
+                        <div class="col-6 prod__ml">
+                            <h2 class="prod__text">Прочая сельхозтехника</h2>
+                            <p class="prod__item-descr">
+                                Цена рассчитывается индивидуально по согласованному техническому заданию
+                            </p>
+                            <form action="#" class="form form_build">
+                                <h2 class="form__title form__title_build">
+                                    Получить расчет:
+                                </h2>
+                                <p class="form__phone form__phone_build">Ваш телефон<span>*</span></p>
+                                <input name="phone" required placeholder="+7 ( ___ ) ___ - __ - __" type="number"
+                                    class="phonetrack">
+                                <button class="btn btn_text buttontrack">
+                                    Отправить
+                                </button>
+                                <button class="btn btn_build btn_bg">8 928 212 22 19</button>
+                            </form>
+                            <div class="prod__item-advs">
+                                Продукция компании эргономична и современна:
+                                <ul class="prod__item-advs-list">
+                                    <li class="prod__item-advs-adv">процесс подготовки её к работе занимает минимум
+                                        времени и не требует специальных навыков</li>
+                                    <li class="prod__item-advs-adv">вся продукция компании выверена отечественными
+                                        ГОСТами, отвечает мировым стандартам качества и действующим нормативам ГНУ ВИЗР
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="prod__item">
+                        <div class="col-6">
+                            <img src="img/prod_4.jpg" alt="build__img" class="prod__img">
+                        </div>
+                        <div class="col-6 prod__ml">
+                            <h2 class="prod__text">Запчасти и комплектующие</h2>
+                            <p class="prod__item-descr">
+                                Цена рассчитывается индивидуально по согласованному техническому заданию
+                            </p>
+                            <form action="#" class="form form_build">
+                                <h2 class="form__title form__title_build">
+                                    Получить расчет:
+                                </h2>
+                                <p class="form__phone form__phone_build">Ваш телефон<span>*</span></p>
+                                <input name="phone" required placeholder="+7 ( ___ ) ___ - __ - __" type="number"
+                                    class="phonetrack">
+                                <button class="btn btn_text buttontrack">
+                                    Отправить
+                                </button>
+                                <button class="btn btn_build btn_bg">8 928 212 22 19</button>
+                            </form>
+                            <div class="prod__item-advs">
+                                У нас Вы можете найти запчасти и комплектующие на сельхозтехнику:
+                                <ul class="prod__item-advs-list">
+                                    <li class="prod__item-advs-adv">разбрасыватели удобрений</li>
+                                    <li class="prod__item-advs-adv">штанговые (полевые) и вентиляторные (садовые)
+                                        опрыскиватели</li>
+                                    <li class="prod__item-advs-adv">бороны кольчатые и пружинные и многое другое</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="find">
+            <div class="container">
+                <h2 class="find__title">Не нашли, что искали?</h2>
+                <p class="find__descr">Отправьте заявку — подберем необходимое оборудование или комплектующие,
+                    рассчитаем стоимость постройки или производства!</p>
+                <div class="row">
+                    <div class="offset-2 col-8">
+                        <form action="#" class="form form_find">
+                            <p class="form__phone form__phone_find">Ваш телефон<span>*</span></p>
+                            <input name="phone" required placeholder="+7 ( ___ ) ___ - __ - __" type="number"
+                                class="phonetrack">
+                            <button class="btn btn_find buttontrack">
+                                Заказать расчет
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="container">
+                <h2 class="about__title">
+                    О нас
+                </h2>
+                <div class="row">
+                    <div class="col-7">
+                        <p class="about__descr">ООО “АГРО-ТЕХ” было создано с целью удовлетворения потребностей
+                            отечественных сельхозпроизводителей в надежной и практичной технике. В настоящее время это
+                            успешно развивающаяся компания с внушительным опытом работы в производственной и
+                            строительной сфере.
+                        </p>
+                        <p class="about__descr">ООО “АГРО-ТЕХ” уже на протяжении длительного времени является одной из
+                            наиболее заметных компаний изготовителей на рынке сельскохозяйственной техники. Основная
+                            сфера нашей деятельности это – ангары и сельхозтехника от производителя.</p>
+                        <div class="about__feat">
+                            <div class="about__feat-item">
+                                <img src="icons/achievement.svg" alt="feat">
+                                <div class="about__wrapper">
+                                    <h3 class="about__feat-item__title">Качество и приемлемая цена</h3>
+                                    <p class="about__feat-item__descr">предприятие создает столь же качественные,
+                                        недорогие и адаптированные к российским реалиям отечественные аналоги
+                                        сельскохозяйственной техники.</p>
+                                </div>
+                            </div>
+                            <div class="about__feat-item">
+                                <img src="icons/file.svg" alt="feat">
+                                <div class="about__wrapper">
+                                    <h3 class="about__feat-item__title">СЕРТИФИКАТЫ</h3>
+                                    <p class="about__feat-item__descr">все предлагаемые машины сертифицированы, во
+                                        многих из них используются собственные запатентованные разработки.</p>
+                                </div>
+                            </div>
+                            <div class="about__feat-item">
+                                <img src="icons/cooperation.svg" alt="feat">
+                                <div class="about__wrapper">
+                                    <h3 class="about__feat-item__title">Партнерство</h3>
+                                    <p class="about__feat-item__descr">компания имеет десятки фирм-партнеров как на
+                                        территории России, так и в странах ближнего и дальнего зарубежья.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-5">
+                        <div class="about__img-right">
+                            <img src="img/about_1.jpg" alt="photo">
+                            <img src="img/about_2.jpg" alt="photo">
+                            <img src="img/about_3.jpg" alt="photo">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="about__img-bottom">
+                        <div class="col-3"><img src="img/about_b_1.jpg" alt="photo"></div>
+                        <div class="col-3"><img src="img/about_b_2.jpg" alt="photo"></div>
+                        <div class="col-3"><img src="img/about_b_3.jpg" alt="photo"></div>
+                        <div class="col-3"><img src="img/about_b_4.jpg" alt="photo"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="advantage">
+            <div class="container">
+                <h2 class="advantage__title">Наши преимущества</h2>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="advantage__item">
+                            <img src="icons/guarantee.svg" alt="adv">
+                            <div class="advantage__wrapper">
+                                <h3 class="advantage__item-title">Гарантия</h3>
+                                <p class="advantage__item-descr">На каждый наш объект мы даем гарантию на несущие
+                                    конструкции</p>
+                            </div>
+                        </div>
+                        <div class="advantage__item">
+                            <img src="icons/worker.svg" alt="adv">
+                            <div class="advantage__wrapper">
+                                <h3 class="advantage__item-title">Опытные бригады</h3>
+                                <p class="advantage__item-descr">Мы не набираем "непонятные" бригады из интернета. Наши
+                                    люди
+                                    более 5 лет работают с нами</p>
+                            </div>
+                        </div>
+                        <div class="advantage__item">
+                            <img src="icons/cogwheel-setting.svg" alt="adv">
+                            <div class="advantage__wrapper">
+                                <h3 class="advantage__item-title">СРО</h3>
+                                <p class="advantage__item-descr">Мы саморегулируемая организация и у нас есть
+                                    соответствующий допуск. Гарантия надёжности</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="advantage__item">
+                            <img src="icons/wallet.svg" alt="adv">
+                            <div class="advantage__wrapper">
+                                <h3 class="advantage__item-title">Без скрытых платежей</h3>
+                                <p class="advantage__item-descr">В отличие от конкурентов, мы гарантируем, что цена в
+                                    договоре неизменна при любых обстоятельствах</p>
+                            </div>
+                        </div>
+                        <div class="advantage__item">
+                            <img src="icons/engineering.svg" alt="adv">
+                            <div class="advantage__wrapper">
+                                <h3 class="advantage__item-title">Своя база и техника</h3>
+                                <p class="advantage__item-descr">Мы обеспечиваем низкие цены за счёт того что у нас своя
+                                    производственная база со всем необходимым оборудованием и спец.техникой</p>
+                            </div>
+                        </div>
+                        <div class="advantage__item">
+                            <img src="icons/mechanics.svg" alt="adv">
+                            <div class="advantage__wrapper">
+                                <h3 class="advantage__item-title">Под ключ</h3>
+                                <p class="advantage__item-descr">Выполняем полный комплекс работ - от проектирования до
+                                    сдачи в эксплуатацию, помогаем с благоустройством, оформляем документы</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <div class="footer__logo">
+                        <img src="icons/logo_footer.png" alt="logo">
+                    </div>
+                    <div class="footer__phone">
+                        <a href="tel:+89282122219" class="phonetrack">8-928-212-22-19</a>
+                        <a href="tel:+89287789280" class="phonetrack">8-928-778-92-80</a>
+                    </div>
+                    <div class="footer__social">
+                        <div class="footer__whats">
+                            <img src="icons/whatsapp-icon.svg" alt="whatsup">
+                            <p>WhatsApp</p>
+                        </div>
+                        <div class="footer__mail">
+                            <img src="icons/mail_red.svg" alt="mail">
+                            <a href="mailto:mail@agro-teh.su">mail@agro-teh.su</a>
+                        </div>
+                    </div>
+                    <div class="footer__ter">
+                        347939, Россия, Ростовская область, Таганрог, ул. Пархоменко, 19
+                    </div>
+                </div>
+                <div class="col-3">
+                    <nav class="footer__nav">
+                        <ul class="footer__nav__menu">
+                            <li class="footer__nav__menu-item"><a href="#" class="footer__nav__menu-link">АНГАРЫ</a>
+                            </li>
+                            <li class="footer__nav__menu-item"><a href="#"
+                                    class="footer__nav__menu-link">СЕЛЬХОЗТЕХНИКА</a></li>
+                            <li class="footer__nav__menu-item"><a href="#" class="footer__nav__menu-link">ЗАПЧАСТИ</a>
+                            </li>
+                            <li class="footer__nav__menu-item"><a href="#" class="footer__nav__menu-link">УСЛУГИ</a>
+                            </li>
+                            <li class="footer__nav__menu-item"><a href="#" class="footer__nav__menu-link">О КОМПАНИИ</a>
+                            </li>
+                            <li class="footer__nav__menu-item"><a href="#" class="footer__nav__menu-link">КОНТАКТЫ</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-3">
+                    <div class="footer__work">
+                        <h2 class="footer__work-title">Наши работы<img src="icons/triangle.svg" alt="triangle"></h2>
+                        <ul class="footer__work-nav__menu">
+                            <li class="footer__work-nav__menu__item"><a href="#"
+                                    class="footer__work-nav__menu__link">Ангары
+                                    бескаркасные</a>
+                            </li>
+                            <li class="footer__work-nav__menu__item"><a href="#"
+                                    class="footer__work-nav__menu__link">Тентовые
+                                    ангары
+                                </a></li>
+                            <li class="footer__work-nav__menu__item"><a href="#" class="footer__work-nav__menu__link">
+                                    Навесы и тока
+                                </a>
+                            </li>
+                            <li class="footer__work-nav__menu__item"><a href="#" class="footer__work-nav__menu__link">
+                                    Авиационные ангары
+                                </a>
+                            </li>
+                            <li class="footer__work-nav__menu__item"><a href="#" class="footer__work-nav__menu__link">
+                                    Каркасные ангары
+                                </a></li>
+                            <li class="footer__work-nav__menu__item"><a href="#" class="footer__work-nav__menu__link">
+                                    Бороны
+                                </a>
+                            </li>
+                            <li class="footer__work-nav__menu__item"><a href="#" class="footer__work-nav__menu__link">
+                                    Разбрасыватели удобрений
+                                </a></li>
+                            <li class="footer__work-nav__menu__item"><a href="#" class="footer__work-nav__menu__link">
+                                    Опрыскиватели
+                                </a>
+                            </li>
+                            <li class="footer__work-nav__menu__item"><a href="#" class="footer__work-nav__menu__link">
+                                    Прочая сельхозтехника
+                                </a>
+                            </li>
+                            <li class="footer__work-nav__menu__item"><a href="#" class="footer__work-nav__menu__link">
+                                    Запчасти и комплектующие
+                                </a></li>
+                            <li class="footer__work-nav__menu__item"><a href="#"
+                                    class="footer__work-nav__menu__link">Услуги</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <form action="#" class="form form_footer">
+                        <h2 class="form__title form__title_footer">
+                            Остались вопросы?
+                            ОСТАВЬТЕ ТЕЛЕФОН-ПЕРЕЗВОНИМ:
+                        </h2>
+                        <p class="form__phone form__phone_footer">Ваш телефон<span>*</span></p>
+                        <input name="phone" required placeholder="+7 ( ___ ) ___ - __ - __" type="number">
+                        <button class="btn btn_footer btn_footer-tg">
+                            Отправить
+                        </button>
+                        <button class="btn btn_footer">8 928 212 22 19</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer__copy">
+                <p>© 2022 ООО “АГРО-ТЕХ"</p>
+                <p>Политика конфиденциальности</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

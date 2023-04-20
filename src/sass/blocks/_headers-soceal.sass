@@ -1,0 +1,31 @@
+.header
+	&__contacs
+		&__link
+			position: relative
+			color: $black-color
+			text-decoration: none
+			transition: all .30s ease-in-out
+			&:hover
+				color: lighten( $black-color,11% )
+			p
+				font-family: $fontM
+				padding-left: 28px
+				font-weight: 400
+				font-size: 1em
+				letter-spacing: 0.01em
+
+			&--wsp ,&--mail
+				&::before
+					content: ""
+					position: absolute
+					left: 0
+					top: 50%
+					transform: translateY(-50%)
+					width: 18px
+					height: 18px
+			&--wsp
+				&::before
+					background: url("../icons/whatsapp-icon.svg") center/contain no-repeat
+			&--mail
+				&::before
+					background: url("../icons/mail.svg") center/contain no-repeat

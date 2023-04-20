@@ -1,0 +1,22 @@
+.find {
+    padding-top: 70px;
+    padding-bottom: 88px;
+    background: #B5D7D9;
+
+    &__title {
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 58px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #000000;
+    }
+
+    &__descr {
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 44px;
+        text-align: center;
+        color: #000000;
+    }
+}

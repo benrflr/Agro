@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'Inter';
+    src: local('Inter-300'),
+        url('../fonts/Inter-Light.ttf') format('ttf');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: local('Inter-500'),
+        url('../fonts/Inter-Medium.ttf') format('ttf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: local('Inter-400'),
+        url('../fonts/Inter-Regular.ttf') format('ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: local('Inter-600'),
+        url('../fonts/Inter-SemiBold.ttf') format('ttf');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: local('Montserrat-400'),
+        url('../fonts/Montserrat-Regular.ttf') format('ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: local('Montserrat-500'),
+        url('../fonts/Montserrat-Medium.ttf') format('ttf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: local('Montserrat-600'),
+        url('../fonts/Montserrat-SemiBold.ttf') format('ttf');
+    font-weight: 600;
+    font-style: normal;
+}

@@ -1,0 +1,129 @@
+.prod {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    &__ml {
+        margin-left: 30px;
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 48px;
+        text-transform: uppercase;
+        color: #000000;
+    }
+
+    &__tabs {
+        margin-top: 60px;
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__tab {
+        width: 256px;
+        height: 63px;
+        border: 2px solid #2F7B80;
+        color: #000000;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 60px;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 5px;
+
+        &:nth-child(3) {
+            line-height: 30px;
+        }
+
+        &:nth-child(5) {
+            line-height: 30px;
+        }
+
+        &_active {
+            background: #2F7B80;
+            color: $white-color;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+    }
+
+    &__item {
+        padding-top: 75px;
+        display: none;
+        max-height: 479px;
+
+        &_active {
+            display: flex;
+        }
+
+        &-lists {
+            margin-top: 5px;
+            list-style-type: none;
+        }
+
+        &-list {
+            a {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 94.02%;
+                text-decoration-line: underline;
+                color: #2F7B80;
+            }
+        }
+
+        &-specs {
+            margin-top: 15px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &-spec {
+            max-width: 200px;
+
+            p {
+                font-weight: 500;
+                font-size: 20px;
+                color: #000000;
+            }
+        }
+
+        &-descr {
+            margin-top: 15px;
+            font-style: italic;
+            font-weight: 300;
+            font-size: 20px;
+            color: #000000;
+        }
+
+        &-advs {
+            margin-top: 25px;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 94.02%;
+            color: #000000;
+
+            &-list {
+                margin-top: 15px;
+                font-weight: 500;
+                font-size: 20px;
+            }
+
+            &-adv {
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 94.02%;
+            }
+        }
+    }
+
+    &__text {
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 48px;
+        color: #000000;
+    }
+}

@@ -1,0 +1,58 @@
+.header {
+	font-size: 16px;
+	&__logo{
+		&__link{
+			display: block;
+		img{
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+
+		}}
+  &__row{ 
+   	display: flex;
+    align-items: center;
+    justify-content: space-between;
+		flex-wrap: wrap;
+		padding: 25px 0 ;
+    }
+
+    &__price {
+        display: flex;
+        align-items: center;
+
+        img {
+					display: block;
+            width: 16%;
+            height: auto;
+        }
+
+        p {
+            font-family: $fontM ;
+            margin-left: 13px;
+            font-weight: 400;
+            font-size: 1em;
+            letter-spacing: 0.01em;
+            color: $black-color;
+        }
+    }
+
+    
+    &__phones {
+        display: flex;
+        flex-direction: column;
+
+        a {
+            font-family: $fontM;
+            text-decoration: none;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1.17em;
+            line-height: 26px;
+            letter-spacing: 0.01em;
+            color: $black-color;
+        }
+    }
+}
+

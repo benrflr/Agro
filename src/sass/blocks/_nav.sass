@@ -1,0 +1,67 @@
+.nav
+	background: $accent
+
+	&__menu
+		display: flex
+		justify-content: space-evenly
+		flex-wrap: wrap
+		margin: 0
+		list-style-type: none
+		&__item
+			padding: 20px 0
+			&:not(:last-child)
+				padding: inherit 5px
+				margin-right: 7.1%
+		&__link
+			font-weight: 500
+			font-size: 0.90em
+			letter-spacing: 0.01em
+			color: $white-color
+			text-decoration: none
+			position: relative
+			text-transform: uppercase
+			transition: all .30s ease-in-out
+			&:hover
+				color: darken($white-color,11%)
+			&--triangle
+				&::before
+					content: ""
+					position: absolute
+					width: 0
+					height: 0
+					border-left: 8.5px solid transparent
+					border-right: 8.5px solid transparent
+					border-top: 9px solid $white-color
+					right: -20px
+					top: 50%
+					transform: translateY(-50%)
+					transition: all .30s ease-in-out
+				&:hover
+					&::before
+						border-top: none
+						border-bottom: 9px solid darken($white-color,11%)
+	&__dropdown
+		transform: translateX(-20%)
+		position: absolute
+		display: none
+		flex-direction: column
+		z-index: 10
+		padding: 25px 30px
+		margin-top: 20px
+		background: #FFFFFF
+		border-radius: 5px
+		&:hover
+			display: flex
+		&_item
+			font-weight: 500
+			font-size: 16px
+			line-height: 21px
+			letter-spacing: 0.01em
+			text-decoration: none
+			color: #000000
+			&:hover
+				text-decoration-line: underline
+				color: #000000
+
+.nav__menu__item:hover .nav__dropdown
+	display: flex
