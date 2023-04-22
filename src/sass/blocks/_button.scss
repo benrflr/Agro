@@ -32,12 +32,12 @@
 
 
     &_header {
-        padding: 20px 40px;
+        padding: 19px 63px;
     }
 
     &_phone {
 
-        padding: 8px 20px;
+        padding: 11px 34px;
         background: $accent;
         font-weight: 400;
         transition: all .30s ease-in-out;
@@ -53,17 +53,19 @@
 
         position: relative;
         margin-right: 18px;
-        padding: 8px 30px;
-        padding-right: 40px;
+        padding: 11px 60px 11px 35px;
         box-shadow: 0px 5px 14px rgba(247, 103, 67, 0.25);
 
         &::after {
             content: "";
-            background: url('../../icons/telegram.svg') center (center / cover) no-repeat;
+            display: block;
+            background: url('../icons/telegram.svg') center / contain no-repeat;
             position: absolute;
-            width: 40px;
-            height: 37px;
-            right: 10px;
+            width: 35px;
+            height: 35px;
+            right: 1%;
+            top: 65%;
+            transform: translateY(-50%);
         }
 
     }
@@ -88,7 +90,7 @@
             position: absolute;
             width: 40px;
             height: 37px;
-            right: 5px;
+            right: 1%;
         }
     }
 
@@ -101,21 +103,7 @@
     }
 
     &_find {
-        position: relative;
-        height: 48px;
-        margin-right: 10px;
-        padding-left: 45px;
-        padding-right: 70px;
-        box-shadow: 0px 5px 14px rgba(247, 103, 67, 0.25);
-
-        &::after {
-            content: "";
-            background: url('../../icons/telegram.svg') center (center / cover) no-repeat;
-            position: absolute;
-            width: 40px;
-            height: 37px;
-            right: 27px;
-        }
+        flex: 1;
     }
 
     &_bg {
@@ -124,9 +112,9 @@
 
     &_footer {
         position: relative;
-        margin-bottom: 20px;
+        margin: 0 0 20px 0;
         width: 100%;
-        height: 48px;
+        padding: 10px 0;
 
         &-tg {
             &::after {
@@ -135,7 +123,7 @@
                 position: absolute;
                 width: 40px;
                 height: 37px;
-                right: 70px;
+                right: 1%;
             }
         }
 

@@ -1,21 +1,25 @@
 .header {
-	font-size: 16px;
-	&__logo{
-		&__link{
-			display: block;
-		img{
-			display: block;
-			width: 100%;
-			height: auto;
-		}
+    font-size: 16px;
 
-		}}
-  &__row{ 
-   	display: flex;
-    align-items: center;
-    justify-content: space-between;
-		flex-wrap: wrap;
-		padding: 25px 0 ;
+    &__logo {
+        &__link {
+            display: block;
+
+            img {
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+
+        }
+    }
+
+    &__row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 25px 0;
     }
 
     &__price {
@@ -23,7 +27,7 @@
         align-items: center;
 
         img {
-					display: block;
+            display: block;
             width: 16%;
             height: auto;
         }
@@ -38,7 +42,7 @@
         }
     }
 
-    
+
     &__phones {
         display: flex;
         flex-direction: column;
@@ -54,5 +58,16 @@
             color: $black-color;
         }
     }
+
+    &__mobile {
+        display: flex;
+    }
 }
 
+.hamburger {
+    display: none;
+}
+
+.mobile__menu {
+    display: none;
+}

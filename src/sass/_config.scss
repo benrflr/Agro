@@ -4,58 +4,63 @@
 @import 'node_modules/bootstrap/scss/bootstrap';
 
 * {
-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 p {
-    margin: 0;
+	margin: 0;
 }
 
 ul,
 li {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
-::placeholder{
+::placeholder {
 
 	color: #666;
 }
 
-::selection{
+::selection {
 	background-color: $accent;
 	color: #fff;
 
 }
 
-input, textarea{
-	
+input,
+textarea {
+
 	outline: none;
-	&:focus:required:invalid{
+
+	&:focus:required:invalid {
 
 		border-color: red;
 	}
-	&:required:valid{
+
+	&:required:valid {
 		border-color: green;
 
 	}
 }
 
-body{
-font-family: $fontI;
-font-size: $fontsize;
-line-height: $lineheight;
-color: $textcolor ;
-min-width: 320px;
-position: relative;
-overflow-x: hidden;
+body {
+	font-family: $fontI;
+	font-size: $fontsize;
+	line-height: $lineheight;
+	color: $textcolor ;
+	min-width: 320px;
+	position: relative;
+	overflow-x: hidden;
 }
+
 @import 'blocks/button';
 @import 'blocks/form';
 
 @import 'blocks/header';
 @import 'blocks/headers-soceal';
 @import 'blocks/nav';
+@import 'blocks/text';
 @import 'blocks/hero';
 @import 'blocks/hero-bg';
 @import 'blocks/build';
@@ -64,3 +69,4 @@ overflow-x: hidden;
 @import 'blocks/about';
 @import 'blocks/advantage';
 @import 'blocks/footer';
+@import 'blocks/media';

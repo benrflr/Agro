@@ -10,18 +10,18 @@ $fontM: 'Montserrat', sans-serif;
 $systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
 $grid-gutter-width: 20px;
 $gutter: $grid-gutter-width;
-// $grid-breakpoints: ( 
-// 	xs: 0,
-// 	sm: 200px,
-// 	md: 320px,
-// 	lg: 480px,
-// 	xl: 768px,
-// 	xxl: 1000px
-// );
-// $container-max-widths: ( 
-//  sm: 320px, 
-// md: 480px,
-// lg: 768px, 
-// xl: 1000px, 
-// xxl: 1180px  
-// );
+$grid-breakpoints: (
+    xs: 0,
+    sm: 200px,
+    md: 320px,
+    lg: 480px,
+    xl: 768px,
+    xxl: 1000px
+);
+$container-max-widths: (
+    sm: 320px,
+    md: 480px,
+    lg: 768px,
+    xl: 1000px,
+    xxl: 1180px
+);

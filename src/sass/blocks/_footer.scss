@@ -1,20 +1,61 @@
 .footer {
     background: #5A7678;
-    padding-top: 85px;
-    padding-bottom: 30px;
+    padding: 85px;
+
+    &__logo {
+        &__link {
+            display: block;
+            width: 60%;
+
+            img {
+                display: block;
+                width: 100%;
+                object-fit: contain;
+
+            }
+        }
+
+    }
+
+    &--contact {
+        .footer--link {
+            color: $white-color;
+
+            &.header__contacs__link--mail {
+                &::before {
+
+                    background: url("../icons/mail_red.svg") center/contain no-repeat;
+                }
+            }
+
+            &:hover {
+                color: darken($white-color, 11%);
+            }
+
+
+        }
+
+
+
+    }
 
     &__phone {
         margin-top: 25px;
         display: flex;
+        font-weight: 600;
+        font-size: 1.07em;
         flex-direction: column;
 
         a {
-            font-weight: 600;
-            font-size: 28px;
-            line-height: 34px;
-            letter-spacing: 0.01em;
-            color: #FFFFFF;
+
+            color: $white-color;
             text-decoration: none;
+            transition: all .30s ease-in-out;
+
+            &:hover {
+
+                color: darken($white-color, 11%);
+            }
         }
 
     }
@@ -23,43 +64,14 @@
         margin-top: 30px;
     }
 
-    &__whats {
-        display: flex;
-        margin-bottom: 10px;
-        align-items: center;
-
-        p {
-            margin-left: 10px;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 16px;
-            letter-spacing: 0.01em;
-            color: #FFFFFF;
-        }
-    }
-
-    &__mail {
-        display: flex;
-        align-items: center;
-
-        p {
-            margin-left: 10px;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 16px;
-            letter-spacing: 0.01em;
-            color: #FFFFFF;
-        }
-    }
 
     &__ter {
         max-width: 240px;
         margin-top: 15px;
         font-weight: 400;
-        font-size: 16px;
-        line-height: 16px;
-        letter-spacing: 0.01em;
-        color: #FFFFFF;
+        font-size: .9em;
+        line-height: normal;
+        color: $white-color;
     }
 
     &__nav {
@@ -70,10 +82,17 @@
 
             &-link {
                 font-weight: 500;
-                font-size: 20px;
-                line-height: 21px;
-                color: #FFFFFF;
+                font-size: 1.04em;
+                line-height: normal;
+                color: $white-color ;
+                transition: all .30s ease-in-out;
                 text-decoration: none;
+
+                &:hover {
+                    color: darken($white-color, 11%);
+
+                }
+
             }
 
             &-item {
@@ -91,39 +110,63 @@
 
         &-link {
             font-weight: 500;
-            font-size: 20px;
-            line-height: 21px;
+            font-size: 1.04em;
             letter-spacing: 0.01em;
-            color: #FFFFFF;
+            transition: all .30s ease-in-out;
+            color: $white-color;
             text-decoration: none;
+
+            &:hover {
+                color: darken($white-color, 11%);
+
+            }
         }
     }
 
     &__work {
         &-title {
+            display: inline-block;
+            position: relative;
+            padding-right: 2px;
             font-weight: 500;
-            font-size: 20px;
-            line-height: 21px;
-            letter-spacing: 0.01em;
-            color: #FFFFFF;
+            font-size: 1.04em;
+            line-height: normal;
+            color: $white-color;
             text-transform: uppercase;
 
-            img {
-                margin-left: 10px;
-                transform: rotate(180deg);
+            &.nav__menu__link--triangle {
+
+                &::before {
+                    border-top: none;
+                    border-bottom: 9px solid $white-color;
+                }
+
+                &:hover {
+                    &::before {
+                        border-top: none;
+                        border-bottom: 9px solid $white-color;
+                    }
+                }
             }
         }
 
         &-nav__menu {
             list-style-type: none;
+            margin-left: 6px;
 
             &__link {
                 font-weight: 400;
-                font-size: 16px;
-                line-height: 21px;
+                font-size: .8em;
+                line-height: normal;
                 letter-spacing: 0.01em;
-                color: #FFFFFF;
+                color: $white-color;
+                transition: all .30s ease-in-out;
                 text-decoration: none;
+
+                &:hover {
+                    color: darken($white-color, 11%);
+
+                }
             }
         }
     }
@@ -135,10 +178,9 @@
 
         p {
             font-weight: 400;
-            font-size: 16px;
-            line-height: 16px;
-            letter-spacing: 0.01em;
-            color: #FFFFFF;
+            font-size: 0.7em;
+            line-height: normal;
+            color: $white-color;
 
             &:first-child {
                 margin-right: 60px;

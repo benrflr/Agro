@@ -8,12 +8,21 @@
 		margin: 0
 		list-style-type: none
 		&__item
-			padding: 20px 0
+			position: relative
 			&:not(:last-child)
-				padding: inherit 5px
 				margin-right: 7.1%
+
+			&:has(.nav__dropdown:hover,.nav__dropdown_item:hover,.nav__dropdown_link:hover)
+				.nav__menu__link
+					color: darken($white-color,11%)
+					&--triangle
+						&::before
+							border-top: none
+							border-bottom: 9px solid darken($white-color,11%)
 		&__link
+			display: block
 			font-weight: 500
+			padding: 20px 0
 			font-size: 0.90em
 			letter-spacing: 0.01em
 			color: $white-color
@@ -21,6 +30,8 @@
 			position: relative
 			text-transform: uppercase
 			transition: all .30s ease-in-out
+			&:not(:last-child)
+				padding: inherit 5px
 			&:hover
 				color: darken($white-color,11%)
 			&--triangle
@@ -36,32 +47,53 @@
 					top: 50%
 					transform: translateY(-50%)
 					transition: all .30s ease-in-out
+				&:hover ~ .nav__dropdown
+					visibility: visible
+					opacity: 1
+					z-index: 4
+					max-height: 600px
 				&:hover
 					&::before
 						border-top: none
 						border-bottom: 9px solid darken($white-color,11%)
 	&__dropdown
-		transform: translateX(-20%)
 		position: absolute
-		display: none
-		flex-direction: column
-		z-index: 10
-		padding: 25px 30px
-		margin-top: 20px
-		background: #FFFFFF
-		border-radius: 5px
+		left: 0
+		top: 64px
+		visibility: hidden
+		z-index: -1
+		opacity: 0
+		max-height: 0
+		padding: 12px 15px
+		min-width: 213px
+		overflow: hidden
+		border-radius: 0 0px 5px 5px
+		background: $accent
+		list-style: none
+		transition: all .30s ease-in-out
+		&:hover ~ .nav__menu__link--triangle
+			&::before
+				border-top: none
+				border-bottom: 9px solid darken($white-color,11%)
 		&:hover
-			display: flex
-		&_item
+			opacity: 1
+			max-height: 600px
+			visibility: visible
+			z-index: 4
+		&__item
+			display: block
+			margin: 0
+			padding: 0
+			&:not(:last-child)
+				margin-bottom: 15px
+
+		&__link
 			font-weight: 500
-			font-size: 16px
+			transition: all .30s ease-in-out
+			font-size: 1em
 			line-height: 21px
 			letter-spacing: 0.01em
 			text-decoration: none
-			color: #000000
+			color: $white-color
 			&:hover
-				text-decoration-line: underline
-				color: #000000
-
-.nav__menu__item:hover .nav__dropdown
-	display: flex
+				color: darken($white-color,11%)

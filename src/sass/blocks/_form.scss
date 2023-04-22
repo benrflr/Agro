@@ -28,8 +28,8 @@
         &_build {
             margin-bottom: 3px;
             font-weight: 400;
-            font-size: 32px;
-            color: #000000;
+            font-size: 1.7em;
+            color: $black-color;
             text-transform: none;
         }
 
@@ -43,10 +43,10 @@
 
         &_footer {
             font-weight: 400;
-            font-size: 24px;
-            line-height: 29px;
+            font-size: 1.4em;
+            line-height: normal;
             text-transform: uppercase;
-            color: #FFFFFF;
+            color: $white-color;
         }
     }
 
@@ -95,8 +95,21 @@
 
         input {
             background: rgba(178, 175, 175, 0.68);
-            height: 42px;
+            padding: 11px 40px 11px 12px;
             margin-right: 10px;
+            font-size: 0.8em;
+            margin-right: 10px;
+        }
+
+        .btn_phone {
+
+            padding: 8px 22px 9px 22px;
+        }
+
+        .btn_submit {
+            margin-right: 10px;
+            padding: 8px 54px 9px 20px;
+
         }
     }
 
@@ -119,12 +132,29 @@
         }
     }
 
-    &_footer {
-        padding-top: 0;
+    &__wrap--footеr {
+        flex-direction: column;
 
         input {
+            font-size: 1em;
             width: 100%;
-            margin-bottom: 20px;
+            margin: 0 0 20px 0;
         }
+
+        .btn_footer {
+            background: $back-color;
+            transition: all .30s ease-in-out;
+
+            &:hover {
+
+                background: darken($back-color, 11%);
+            }
+
+        }
+
+    }
+
+    &_footer {
+        padding-top: 0;
     }
 }
